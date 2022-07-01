@@ -8,7 +8,6 @@ namespace _4_massiv
         {
             int[] userInputArray = new int[0];
             string userInput;
-            int sumOfArray = 0;
             bool continuationProgram = true;
             
             while(continuationProgram == true)
@@ -19,12 +18,12 @@ namespace _4_massiv
                 
                 if (userInput == "sum")
                 {
+                    int sumOfArray = 0;
                     for (int i = 0; i < userInputArray.Length; i++)
                     {
                         sumOfArray += userInputArray[i];
                     }
                     Console.WriteLine("Сумма всех элементов массива равна: " + sumOfArray);
-                    userInputArray = new int[1];
                 }
                 else if (userInput == "exit")
                 {
